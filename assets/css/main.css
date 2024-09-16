@@ -2585,7 +2585,47 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
+/* Projet */
 
+.project-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem; /* Espace entre le texte et l'image */
+    margin-top: 0.5rem;;
+}
+
+.project-description {
+    flex: 1; /* Occupe tout l'espace restant */
+}
+
+.project-image {
+    flex: 1; /* Occupe tout l'espace restant */
+}
+/* Ajuste l'espace autour du titre */
+.post header.major {
+    margin-bottom: 0.75rem; /* Réduit l'espace en dessous du titre */
+}
+
+.project-image img {
+    max-height: 400px; /* Ajustez la hauteur maximale selon vos besoins */
+    width: 100%;
+    object-fit: cover; /* Garde le ratio tout en remplissant le conteneur */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 736px) {
+    .project-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-image img {
+        max-height: none; /* Réinitialise pour les petits écrans */
+    }
+}
 /* Image */
 
 	.image {
@@ -3779,7 +3819,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
+			padding: 2rem 8rem 2rem 8rem ;
 		}
 
 			#main > .post header.major > .date {
@@ -3943,6 +3983,10 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		}
+		#main h3 {
+			color: #0984e3; /* Bleu électrique */
+			font-weight: bold;
 		}
 
 /* Footer */
