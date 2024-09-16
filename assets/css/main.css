@@ -151,7 +151,7 @@ input, select, textarea {
 		font-family: "Merriweather", Georgia, serif;
 		font-weight: 300;
 		font-size: 1rem;
-		line-height: 2.375;
+		line-height: 2;
 	}
 
 	a {
@@ -2224,7 +2224,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #212931;
+			background-color: #007bff;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2607,11 +2607,10 @@ input, select, textarea {
 }
 
 .project-image img {
-    max-height: 400px; /* Ajustez la hauteur maximale selon vos besoins */
-    width: 100%;
-    object-fit: cover; /* Garde le ratio tout en remplissant le conteneur */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 100%; /* Adapte l'image à la largeur du conteneur */
+    height: auto; /* Conserve les proportions de l'image */
+    object-fit: contain; /* Assure que l'image s'adapte au conteneur sans être rognée */
+    max-height: 400px; /* Ajustez la hauteur max si nécessaire */
 }
 
 /* Responsive Design */
@@ -3273,8 +3272,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/space.jpg");
+			background-color: #2c2c2c; 
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -4285,7 +4283,7 @@ input, select, textarea {
 					-webkit-align-items: center;
 					-ms-align-items: center;
 					align-items: center;
-					padding: 3.15rem 4rem;
+					padding: 1rem 4rem;
 				}
 
 					#footer > section.split.contact > section > * {
@@ -4316,11 +4314,11 @@ input, select, textarea {
 					}
 
 					#footer > section.split.contact > section:first-child {
-						padding: 4rem 4rem 3rem 4rem;
+						padding: 1rem 4rem 1rem 4rem;
 					}
 
 					#footer > section.split.contact > section:last-child {
-						padding: 3rem 4rem 4rem 4rem;
+						padding: 1rem 4rem 1rem 4rem;
 					}
 
 					#footer > section.split.contact > section.alt {
@@ -4731,3 +4729,5 @@ input, select, textarea {
 		}
 
 	}
+
+	
