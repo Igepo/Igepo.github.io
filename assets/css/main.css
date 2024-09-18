@@ -177,7 +177,7 @@ input, select, textarea {
 
 	p {
 		text-align: justify;
-		margin: 0 0 2rem 0;
+		margin: 0 0 1rem 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -321,7 +321,10 @@ input, select, textarea {
 	hr {
 		border-bottom-color: #eeeeee;
 	}
-
+	
+	html {
+		font-size: 14pt; /* ou 12pt */
+	}
 /* Row */
 
 	.row {
